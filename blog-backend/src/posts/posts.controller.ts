@@ -31,7 +31,7 @@ export class PostController {
     @UseGuards(JwtAuthGuard)
     @Put(':id')
     updatePost(@Param('id') id: string, @Body() body: { title: string; content: string }, @Req() req) {
-        return this.postService.updatePost(id, body.title, body.content, req.user.id);
+        return this.postService.updatePost(id, body.title, body.content, req.user.email);
     }
 
     @UseGuards(JwtAuthGuard)

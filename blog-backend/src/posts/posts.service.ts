@@ -33,7 +33,6 @@ export class PostService {
     }
 
     async updatePost(id: string, title: string, content: string, userId: string): Promise<Post> {
-        const objectId = new ObjectId(id);
         const post = await this.getPostById(id);
         if (post.authorId !== userId) {
             throw new UnauthorizedException('You are not the author of this post');
