@@ -1,0 +1,51 @@
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.google-btn {
+    background-color: #db4437;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.google-btn:hover {
+    background-color: #c1351d;
+}
+
+.facebook-btn {
+    background-color: #1877f2;
+    color: white;
+}
+
+.facebook-btn:hover {
+    background-color: #125ab6;
+}
